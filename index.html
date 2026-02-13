@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad — ROC Wallet</title>
+    <meta name="description"
+        content="Política de privacidad de la aplicación ROC Wallet. Información sobre cómo recopilamos, usamos y protegemos tus datos financieros.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0f1e;
+            color: #c8d1e0;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0d1529 0%, #0a1628 50%, #091220 100%);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #f1f5f9;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2 .emoji {
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #cbd5e1;
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0.75rem;
+            color: #94a3b8;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+            color: #94a3b8;
+        }
+
+        li strong {
+            color: #cbd5e1;
+        }
+
+        .highlight-box {
+            background: rgba(6, 182, 212, 0.08);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.25rem 0;
+        }
+
+        .highlight-box p {
+            color: #7dd3fc;
+            margin-bottom: 0;
+        }
+
+        .highlight-box strong {
+            color: #38bdf8;
+        }
+
+        .warning-box {
+            background: rgba(251, 191, 36, 0.08);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.25rem 0;
+        }
+
+        .warning-box p {
+            color: #fcd34d;
+            margin-bottom: 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(100, 116, 139, 0.2);
+        }
+
+        .data-table th {
+            background: rgba(15, 23, 42, 0.8);
+            color: #e2e8f0;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .data-table td {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        .data-table tr:hover td {
+            background: rgba(15, 23, 42, 0.4);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-local {
+            background: rgba(34, 197, 94, 0.15);
+            color: #4ade80;
+        }
+
+        .badge-optional {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-top: 1px solid rgba(56, 189, 248, 0.1);
+            color: #475569;
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.15rem;
+            }
+
+            .container {
+                padding: 1.5rem 1rem 3rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">R</div>
+                <span class="logo-text">ROC Wallet</span>
+            </div>
+            <h1>Política de Privacidad</h1>
+            <p class="subtitle">Última actualización: 12 de febrero de 2026</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Introducción -->
+        <section class="section">
+            <h2><span class="emoji">📋</span> Introducción</h2>
+            <p>
+                En <strong>ROC Wallet</strong> ("nosotros", "nuestro" o "la aplicación"), respetamos y protegemos la
+                privacidad de nuestros usuarios. Esta Política de Privacidad describe cómo recopilamos, usamos,
+                almacenamos y protegemos tu información cuando utilizas nuestra aplicación móvil de gestión financiera
+                personal.
+            </p>
+            <p>
+                Al descargar, instalar o usar ROC Wallet, aceptas las prácticas descritas en esta política. Si no estás
+                de acuerdo con alguna parte de esta política, te recomendamos no utilizar la aplicación.
+            </p>
+            <div class="highlight-box">
+                <p><strong>🔒 Principio fundamental:</strong> ROC Wallet es una aplicación de <strong>almacenamiento
+                        local</strong> (local-first). Tus datos financieros se almacenan directamente en tu dispositivo
+                    y no se envían a servidores externos sin tu consentimiento explícito.</p>
+            </div>
+        </section>
+
+        <!-- Información que recopilamos -->
+        <section class="section">
+            <h2><span class="emoji">📊</span> Información que Recopilamos</h2>
+
+            <h3>1. Información proporcionada por el usuario</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Propósito</th>
+                        <th>Almacenamiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Personalización de la experiencia</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                    <tr>
+                        <td>Correo electrónico</td>
+                        <td>Identificación de cuenta</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                    <tr>
+                        <td>Transacciones financieras</td>
+                        <td>Gestión de finanzas personales</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                    <tr>
+                        <td>Presupuestos y metas</td>
+                        <td>Seguimiento de objetivos financieros</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                    <tr>
+                        <td>Cuentas y balances</td>
+                        <td>Organización financiera</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                    <tr>
+                        <td>Suscripciones</td>
+                        <td>Control de pagos recurrentes</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. Información recopilada automáticamente</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Propósito</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Datos biométricos (huella/rostro)</td>
+                        <td>Autenticación segura</td>
+                        <td><span class="badge badge-local">Local</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Permisos -->
+        <section class="section">
+            <h2><span class="emoji">🔐</span> Permisos de la Aplicación</h2>
+            <p>ROC Wallet solicita los siguientes permisos del dispositivo, cada uno con un propósito específico:</p>
+
+            <h3>📷 Cámara (<code>CAMERA</code>)</h3>
+            <p>Utilizado para capturar fotografías de recibos y comprobantes de transacciones. Las imágenes se almacenan
+                localmente en tu dispositivo.</p>
+
+            <h3>🔒 Biometría (<code>USE_BIOMETRIC</code> / <code>USE_FINGERPRINT</code>)</h3>
+            <p>Permite el desbloqueo de la aplicación mediante huella dactilar o reconocimiento facial. Los datos
+                biométricos son gestionados exclusivamente por el sistema operativo Android y <strong>nunca son
+                    accesibles ni almacenados por ROC Wallet</strong>.</p>
+
+            <h3>🔔 Notificaciones</h3>
+            <p>Para enviarte alertas locales sobre:</p>
+            <ul>
+                <li>Presupuestos que se acercan o exceden su límite</li>
+                <li>Recordatorios de pagos de suscripciones</li>
+                <li>Resúmenes semanales de gastos</li>
+                <li>Logros financieros alcanzados</li>
+            </ul>
+            <p>Todas las notificaciones son <strong>locales</strong> y no requieren conexión a internet.</p>
+        </section>
+
+        <!-- Uso de la información -->
+        <section class="section">
+            <h2><span class="emoji">⚙️</span> Cómo Usamos tu Información</h2>
+            <p>La información que proporcionas se utiliza exclusivamente para:</p>
+            <ul>
+                <li><strong>Gestión financiera:</strong> Registrar y categorizar tus transacciones, ingresos y gastos.
+                </li>
+                <li><strong>Análisis personal:</strong> Generar estadísticas, gráficos y reportes sobre tus hábitos
+                    financieros.</li>
+                <li><strong>Presupuestos:</strong> Monitorear tu gasto contra los límites que estableces.</li>
+                <li><strong>Metas de ahorro:</strong> Seguimiento del progreso hacia tus objetivos financieros.</li>
+                <li><strong>Salud financiera:</strong> Calcular tu puntuación de salud financiera y proporcionar
+                    consejos personalizados.</li>
+                <li><strong>Seguridad:</strong> Proteger el acceso a la aplicación mediante contraseña y biometría.</li>
+                <li><strong>Notificaciones:</strong> Alertarte sobre eventos financieros importantes.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>✅ No utilizamos tu información para:</strong> publicidad, venta a terceros, perfilamiento
+                    comercial, ni ningún propósito ajeno a la gestión de tus finanzas personales.</p>
+            </div>
+        </section>
+
+        <!-- Almacenamiento y seguridad -->
+        <section class="section">
+            <h2><span class="emoji">🛡️</span> Almacenamiento y Seguridad</h2>
+
+            <h3>Almacenamiento local</h3>
+            <p>ROC Wallet almacena toda tu información financiera <strong>directamente en tu dispositivo</strong>
+                utilizando las siguientes tecnologías:</p>
+            <ul>
+                <li><strong>WatermelonDB / SQLite:</strong> Base de datos local encriptada para transacciones, cuentas,
+                    categorías y metas.</li>
+                <li><strong>Expo SecureStore:</strong> Almacenamiento seguro (Keychain en iOS /
+                    EncryptedSharedPreferences en Android) para tokens de autenticación y datos sensibles.</li>
+                <li><strong>Cifrado:</strong> Las contraseñas se procesan con hash SHA-256 antes de ser almacenadas.
+                </li>
+            </ul>
+
+            <h3>Medidas de seguridad</h3>
+            <ul>
+                <li>Bloqueo automático de la aplicación tras inactividad configurable.</li>
+                <li>Autenticación biométrica opcional (huella dactilar / reconocimiento facial).</li>
+                <li>Almacenamiento cifrado para credenciales y tokens.</li>
+                <li>Ocultamiento de balances para proteger tu privacidad en público.</li>
+            </ul>
+
+            <div class="warning-box">
+                <p>⚠️ <strong>Importante:</strong> Dado que tus datos se almacenan localmente, si desinstalas la
+                    aplicación o pierdes tu dispositivo sin respaldo, <strong>tus datos financieros se
+                        perderán</strong>. Te recomendamos utilizar la función de exportación de datos periódicamente.
+                </p>
+            </div>
+        </section>
+
+        <!-- Compartir información -->
+        <section class="section">
+            <h2><span class="emoji">🤝</span> Compartición de Información</h2>
+            <p><strong>No compartimos, vendemos, alquilamos ni divulgamos tu información personal a terceros.</strong>
+            </p>
+            <p>Tu información financiera permanece en tu dispositivo en todo momento. Las únicas excepciones serían:</p>
+            <ul>
+                <li><strong>Cumplimiento legal:</strong> Si la ley nos obliga a divulgar información en respuesta a una
+                    orden judicial o proceso legal válido.</li>
+                <li><strong>Sincronización voluntaria:</strong> Si en el futuro decides activar la sincronización entre
+                    dispositivos, tus datos se transmitirán de forma encriptada. Esta funcionalidad requeriría tu
+                    consentimiento explícito.</li>
+            </ul>
+        </section>
+
+        <!-- Derechos del usuario -->
+        <section class="section">
+            <h2><span class="emoji">✊</span> Tus Derechos</h2>
+            <p>Como usuario de ROC Wallet, tienes los siguientes derechos sobre tus datos:</p>
+            <ul>
+                <li><strong>Acceso:</strong> Puedes ver todos tus datos en cualquier momento dentro de la aplicación.
+                </li>
+                <li><strong>Exportación:</strong> Puedes exportar tus datos financieros en formato CSV en cualquier
+                    momento.</li>
+                <li><strong>Eliminación:</strong> Puedes eliminar cualquier transacción, cuenta, presupuesto o meta
+                    individual. También puedes eliminar todos tus datos desinstalando la aplicación.</li>
+                <li><strong>Rectificación:</strong> Puedes editar cualquier registro financiero en cualquier momento.
+                </li>
+                <li><strong>Revocación de permisos:</strong> Puedes revocar cualquier permiso (cámara, notificaciones,
+                    biometría) desde la configuración de tu dispositivo Android sin afectar el funcionamiento básico de
+                    la app.</li>
+            </ul>
+        </section>
+
+        <!-- Menores de edad -->
+        <section class="section">
+            <h2><span class="emoji">👶</span> Menores de Edad</h2>
+            <p>
+                ROC Wallet no está dirigida a menores de 13 años. No recopilamos intencionalmente información de niños
+                menores de 13 años. Si descubrimos que hemos recopilado información de un menor de 13, tomaremos medidas
+                para eliminar dicha información.
+            </p>
+        </section>
+
+        <!-- Cambios en la política -->
+        <section class="section">
+            <h2><span class="emoji">📝</span> Cambios en esta Política</h2>
+            <p>
+                Podemos actualizar esta Política de Privacidad periódicamente para reflejar cambios en la aplicación o
+                en la legislación aplicable. Te notificaremos sobre cambios significativos mediante una notificación
+                dentro de la aplicación o a través de la actualización en la tienda de aplicaciones.
+            </p>
+            <p>
+                La fecha de "Última actualización" en la parte superior de este documento indica cuándo se realizó la
+                última revisión.
+            </p>
+        </section>
+
+        <!-- Contacto -->
+        <section class="section">
+            <h2><span class="emoji">📬</span> Contacto</h2>
+            <p>Si tienes preguntas, inquietudes o solicitudes relacionadas con esta Política de Privacidad o el manejo
+                de tus datos, puedes contactarnos a través de:</p>
+            <ul>
+                <li><strong>Correo electrónico:</strong> <a
+                        href="mailto:soporte@rocwallet.app">soporte@rocwallet.app</a></li>
+                <li><strong>Desarrollador:</strong> ROCWallet</li>
+                <li><strong>País:</strong> República Dominicana</li>
+            </ul>
+        </section>
+
+        <!-- Legislación aplicable -->
+        <section class="section">
+            <h2><span class="emoji">⚖️</span> Legislación Aplicable</h2>
+            <p>
+                Esta Política de Privacidad se rige por las leyes de la República Dominicana, incluyendo la <strong>Ley
+                    No. 172-13 sobre Protección Integral de los Datos Personales</strong>. También cumplimos con las
+                políticas y directrices de la <strong>Google Play Store</strong> en materia de privacidad y protección
+                de datos.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 ROC Wallet. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="mailto:soporte@rocwallet.app">Contacto</a>
+        </p>
+    </footer>
+</body>
+
+</html>
